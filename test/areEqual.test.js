@@ -133,13 +133,13 @@ test("two identical functions with different names should not be equal. In this 
   expect(areEqual(Guy1, Guy2)).toBe(false)
 })
 
-test("Object that inherit property from another should be different from static property", function () {
+test("Object that inherits property from another should be different from static property", function () {
   function Guy1() {
     this.name = 'Sam'
     return {name: this.name}
   }
   function Guy2() {
-    var name = 'Joe'
+    var name = 'Sam'
     return name
   }
   var guy1 = new Guy1()
@@ -147,3 +147,4 @@ test("Object that inherit property from another should be different from static 
   guy2.name = Guy2()
   expect(areEqual(Guy1, Guy2)).toBe(false)
 })
+
