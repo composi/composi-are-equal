@@ -1,5 +1,5 @@
 /**
- * Compare two values to see if they are equal. 
+ * Compare two values to see if they are equal.
  * It does comparison by value.
  * It treats equality of truthy/falsy values strictly.
  * undefined != null != false, etc.
