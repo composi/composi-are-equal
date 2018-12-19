@@ -65,7 +65,7 @@ test("two arrays with same values should be equal", function () {
   expect(areEqual(array1, array2)).toBe(true)
 })
 
-test("two arrays with same reversed values should not be equal", function () {
+test("two arrays with same values, but reversed, should not be equal", function () {
   const array1 = [1, 2, 3]
   const array2 = [3, 2, 1]
   expect(areEqual(array1, array2)).toBe(false)
