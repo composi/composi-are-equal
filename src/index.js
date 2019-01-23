@@ -35,7 +35,7 @@ export function areEqual(value1, value2) {
     return JSON.stringify(value1) === JSON.stringify(value2)
   } else {
     // Comparing two objects:
-    for (var prop in value1) {
+    for (let prop in value1) {
       if (value1.hasOwnProperty(prop)) {
         if (value2.hasOwnProperty(prop)) {
           if (typeof value1[prop] === 'object') {
